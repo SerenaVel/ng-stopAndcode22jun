@@ -1,0 +1,9 @@
+<div >
+   
+    <ul class="list-group">
+      <li *ngFor="let title of preferiti" class="list-group-item">{{ title }}
+        <button type="button" (click)="rimuoviPreferito(title)" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+    </li>
+     
+    </ul>
+  </div>

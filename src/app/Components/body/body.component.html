@@ -1,0 +1,18 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item" >
+    <a class="nav-link" (click)="SelezioneCategoria('All')" href="#">Tutti</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" (click)="SelezioneCategoria('travel')" href="#">Viaggi</a>
+  </li>
+  <li class="nav-item" >
+    <a class="nav-link" (click)="SelezioneCategoria('food')" href="#">Cucina</a>
+  </li>
+  <li class="nav-item" >
+    <a class="nav-link" (click)="SelezioneCategoria('fashion')" href="#">Moda</a>
+  </li>
+</ul>
+  
+  <div >
+    <app-dettaglio-post *ngFor="let post of PostsFiltrati" [post]="post"></app-dettaglio-post>
+  </div>
